@@ -141,10 +141,16 @@ class LoginPage extends StatelessWidget {
                     children: [
                       Container(
                         width: 150,
-                        child: OutlinedButton.icon(
+                        child: OutlinedButton(
                           onPressed: () {},
-                          icon: Icon(Icons.login),
-                          label: Text('Facebook'),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Image.asset('assets/images/facebook.png', height: 16,),
+                              SizedBox(width: 8,),
+                              Text('Facebook'),
+                            ],
+                          ),
                           style: ButtonStyle(
 
                             backgroundColor: MaterialStateProperty.resolveWith(
@@ -167,10 +173,17 @@ class LoginPage extends StatelessWidget {
                       SizedBox(width: 12,),
                       Container(
                         width: 150,
-                        child: OutlinedButton.icon(
+                        child: OutlinedButton(
                           onPressed: () {},
-                          icon: Icon(Icons.login),
-                          label: Text('Google'),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children:
+                            [
+                              Image.asset('assets/images/google.png', height: 16,),
+                              SizedBox(width: 8,),
+                              Text('Google'),
+                            ],
+                          ),
                           style: ButtonStyle(
 
                             backgroundColor: MaterialStateProperty.resolveWith(
